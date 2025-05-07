@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800");
+@import "tailwindcss";
+@import "@radix-ui/themes/styles.css";
+
+@theme {
+    --font-funnel: "Funnel Display", sans-serif;
+    --color-primary: #3e7343;
+    --color-primary-dark: #192e27;
+    --color-primary-text: #192e27;
+    --color-secondary-text: #2d5346;
+}
+
+* {
+    font-family: var(--font-funnel) !important;
+}
+
+.bg-glass {
+    @apply bg-green-100/10 bg-clip-padding backdrop-filter backdrop-blur-lg border border-gray-100 shadow-sm shadow-green-800/5;
+}
