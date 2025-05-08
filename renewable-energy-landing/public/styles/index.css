@@ -4,10 +4,11 @@
 
 @theme {
     --font-funnel: "Funnel Display", sans-serif;
-    --color-primary: #3e7343;
-    --color-primary-dark: #192e27;
+    --color-primary: #36a341;
+    --color-primary-alfa-25: #36a34125;
+    --color-primary-dark: #27512b;
     --color-primary-text: #192e27;
-    --color-secondary-text: #2d5346;
+    --color-secondary-text: #38423e;
 }
 
 * {
@@ -15,5 +16,9 @@
 }
 
 .bg-glass {
-    @apply bg-green-100/10 bg-clip-padding backdrop-filter backdrop-blur-lg border border-gray-100 shadow-sm shadow-green-800/5;
+    @apply bg-white/75 bg-clip-padding backdrop-filter backdrop-blur-lg border border-gray-100 shadow-md shadow-green-800/5;
+}
+
+.card {
+    @apply bg-white border-gray-100 hover:border-gray-200 duration-300 rounded-lg border p-4 hover:-mt-2  hover:mb-2 hover:-ml-2  hover:mr-2 transition-all shadow-sm hover:shadow-lg shadow-green-900/10;
 }

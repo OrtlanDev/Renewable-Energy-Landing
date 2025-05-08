@@ -1,7 +1,11 @@
+import HeroSection from "../components/sections/HeroSection";
+import { WhatIsSection } from "../components/sections/WhatIsSection";
+
 const HomePage = () => {
     return (
         <>
-            <h1>Home</h1>
+            <HeroSection />
+            <WhatIsSection />
         </>
     );
 };

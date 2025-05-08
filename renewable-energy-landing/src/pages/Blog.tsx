@@ -1,5 +1,11 @@
+import PostList from "../components/PostList";
+
 const BlogPage = () => {
-    return <h1>Blog</h1>;
+    return (
+        <section className="py-15 px-20">
+            <PostList />
+        </section>
+    );
 };
 
 export default BlogPage;

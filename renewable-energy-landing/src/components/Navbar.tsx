@@ -3,8 +3,8 @@ import NavbarLink from "./NavbarLink";
 
 const Navbar = () => {
     return (
-        <nav className="fixed flex items-center justify-between w-full h-15 texture bg-glass px-20">
-            <div className="flex items-center gap-2 text-primary">
+        <nav className="fixed z-50 flex items-center justify-between w-full h-15 texture bg-glass px-20">
+            <div className="flex items-center gap-2 text-primary-dark">
                 <Sprout />
                 <span className="font-black uppercase tracking-widest">EcoEnergy</span>
             </div>
