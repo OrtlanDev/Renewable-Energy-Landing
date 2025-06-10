@@ -5,18 +5,18 @@ interface PostCardProps {
     title: string;
     description: string;
     created_at: string;
-    image?: string;
+    main_image?: string;
     category: string;
     readTime: string;
     tags: string;
 }
 
-export function PostCard({ id, title, description, created_at, image, category, readTime, tags }: PostCardProps) {
+export function PostCard({ id, title, description, created_at, main_image, category, readTime, tags }: PostCardProps) {
     return (
         <article key={id} className="card">
             <div className="relative h-52 w-full">
                 <img
-                    src={image || "src/assets/images/placeholder.svg"}
+                    src={main_image || "src/assets/images/placeholder.svg"}
                     alt={title}
                     className="absolute inset-0 w-full h-full object-cover rounded-lg"
                 />
